@@ -1,7 +1,20 @@
 .home-main{
   padding-top: 22px;
 
+  .ivu-layout{
+
+
   // 公共类
+  .row{
+    margin-left: -14px;
+  }
+  .row::before , .row::after{
+    content: "";
+    display: table;
+  }
+  .row::after{
+    clear: both;
+  }
   .box-hd{
     position: relative;
     height: 58px;
@@ -18,13 +31,15 @@
     top: 0px;
     right: 0px;
   }
+
   /*******************/
-  .ivu-layout{
 
 
+    // 手机部分****************
     .home-brick-row-2-box{
       height: 686px;
       margin-bottom: 8px;
+      padding-top: 22px;
 
       .more-link{
         font-size: 16px;
@@ -46,7 +61,143 @@
         color: #ff6700;
         cursor:pointer;
       }
-    }
 
+      // 主要内容
+      .box-bd{
+        padding-bottom: 0px;
+        overflow: visible;
+
+        .span4{
+          width: 234px;
+          min-height: 1px;
+          float: left;
+          margin-left: 14px;
+
+          .brick-promo-list{
+            height: 614px;
+            margin: 0 0  -14px -14px;
+
+            .brick-item-1{
+              display: inline-block;
+              position: relative;
+              z-index: 2;
+              float: left;
+              width: 234px;
+              height: 614px;
+              margin-left: 14px;
+              margin-bottom: 14px;
+              // background: rgb(117, 24, 24);
+              transition: all .2s linear;
+              cursor: pointer;
+            }
+            .brick-item-1:hover {
+              z-index: 2;
+              box-shadow: 0 15px 30px rgba(0,0,0,.2);
+              transform: translate3d(0,-2px,0);
+            }
+
+          }
+        }
+
+        .span16{
+          width:978px;
+          min-height: 1px;
+          float: left;
+          // margin-left: 14px;
+
+          .brick-list{
+            width:992px;
+
+            .brick-item-2{
+              height:300px;
+              padding:20px 0;
+
+              .figure-img{
+                width:160px;
+                height:160px;
+                margin: 0 auto 18px;
+              }
+
+              .title{
+                font-size: 14px;
+                font-weight: 400;
+                text-align: center;
+                margin: 0 10px 2px;
+                color:#333;
+                line-height: 20.8px;
+              }
+
+              .desc{
+                margin:0 10px 10px;
+                height:18px;
+                font-size: 12px;
+                text-align: center;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                color: #b0b0b0;
+              }
+              .price{
+                margin:0 10px 14px;
+                color: #ff6700;
+              }
+              .flag{
+                position: absolute;
+                top: 0px;
+                left: 50%;
+                width:64px;
+                height: 20px;
+                margin-left: -32px;
+                font-size: 12px;
+                line-height: 20px;
+                text-align:center;
+                color: #fff;
+              }
+              .flag-0 , .flag-1{
+                background:#83c44e;
+              }
+              .flag-2 , .flag-3{
+                background:#e53935;
+              }
+              .flag-4 , .flag-6{
+                background:#e53935;
+              }
+              .flag-5 , .flag-7{
+                display: none;
+              }
+            }
+            .brick-item{
+              position: relative;
+              z-index: 1;
+              float: left;
+              width:234px;
+              margin-left: 14px;
+              margin-bottom: 14px;
+              background:#fff;
+              cursor:pointer;
+              transition:all .2s linear;
+
+
+            }
+            .brick-item-s{
+              height:143px;
+              padding-top:50px;
+            }
+            .brick-item:hover{
+              box-shadow: 0 15px 30px rgba(0,0,0,.1);
+              transform: translate3d(0,-2px,0);
+            }
+          }
+        }
+      }
+    }
+    // 手机部分结束************
+
+    // 手机部分下面横幅*********
+    .home-banner-box-hero{
+      margin: 28px 0 22px;
+      height:120px;
+    }
+    // 手机部分下面横幅结束*****
   }
 }

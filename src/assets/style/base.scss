@@ -23,6 +23,16 @@ li{
 }
 
 /*布局公共类*/
+.clearfix{
+  *zoom: 1;
+}
+.clearfix::before , .clearfix::after{
+  content: "";
+  display: table;
+}
+.clearfix::after{
+  clear: both;
+}
 .container{
   position: relative;
   width:1226px;

@@ -1,20 +1,14 @@
-import vue from 'vue'
 import vuex from 'vuex'
-import actions from './actions'
-import getters from './getters'
-import mutations from './mutations'
-import state from './state'
-import SiteState from './SiteState'
+import Vue from 'vue'
+import HP1 from './HP1'
+import HP3 from './HP3'
 
-vue.use(vuex)
+Vue.use(vuex)
 
 export default new vuex.Store({
   strict: process.env.NODE_ENV !== 'production',
-  // strict: false,
-  namespaced: true,
-  actions,
-  getters,
-  mutations,
-  state,
-  SiteState
+  modules: {
+    HP1,
+    HP3
+  }
 })

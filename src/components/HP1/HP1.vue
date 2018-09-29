@@ -195,10 +195,10 @@ export default {
     SiteCategory
   },
   computed: {
-    ...mapGetters(['TopBarNav', 'HeaderNav', 'KeyWordList', 'HomeHero', 'siteCategoryList', 'SiteListItem'])
+    ...mapGetters('HP1', ['TopBarNav', 'HeaderNav', 'KeyWordList', 'HomeHero', 'siteCategoryList', 'SiteListItem'])
   },
   methods: {
-    ...mapMutations(['PREV_NEXT', 'START_CHANGE', 'TEST']),
+    ...mapMutations('HP1', ['PREV_NEXT', 'START_CHANGE', 'TEST']),
     category (i) {
       console.log(i)
     },
