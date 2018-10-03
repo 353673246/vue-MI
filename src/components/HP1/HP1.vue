@@ -42,7 +42,7 @@
     </Layout>
 
     <!-- 网页导航和轮播图 -->
-    <Layout class="site-header">
+    <Layout class="site-header container">
       <!-- 网页导航 -->
       <Header>
         <div class="container">
